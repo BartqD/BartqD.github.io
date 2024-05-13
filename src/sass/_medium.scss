@@ -1,0 +1,170 @@
+@media (min-width: 768px) {
+	// ---------------
+	// HOME - SECTION
+	// ---------------
+	.home {
+		&-text {
+			margin-left: 5em;
+
+			h1 {
+				font-size: 3rem;
+
+				.forest {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+	// ---------------
+	// ABOUTUS - SECTION
+	// ---------------
+	.aboutus {
+		&__box {
+			&-text {
+				width: 40%;
+			}
+			&-img {
+				width: 55%;
+			}
+		}
+		&__img {
+			max-height: 350px;
+		}
+		&__title {
+			font-size: 2rem;
+		}
+		&__text {
+			font-size: 1.8rem;
+			line-height: 1.1;
+		}
+
+		.hero-text {
+			font-size: 1.5rem;
+		}
+	}
+	// ---------------
+	// OFFER - SECTION
+	// ---------------
+	.offer {
+		&__info {
+			font-size: 1.8rem;
+			margin-bottom: 1em;
+		}
+		&__info2 {
+			font-size: 1.8rem;
+			margin-top: 1em;
+		}
+	}
+	.offer2 {
+		background-image: url('/dist/img/bridge_1920.jpg');
+		&__option {
+			display: flex;
+			&-info {
+				&-btn {
+					width: 30%;
+				}
+			}
+		}
+	}
+	// ---------------
+	// CONTACT - SECTION
+	// ---------------
+	.contact {
+		.content {
+			.section-heading {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		&__boxes {
+			flex-direction: row;
+			justify-content: center;
+		}
+		&__box-left {
+			width: 30%;
+		}
+		&__box-left::before {
+			display: flex;
+			content: '';
+			position: absolute;
+			height: 70%;
+			width: 2px;
+			right: -1em;
+			top: 50%;
+			transform: translateY(-50%);
+			background: c.$green;
+		}
+		&__box-right {
+			margin-left: 4.5em;
+			&-text {
+				font-size: 2.5rem;
+			}
+		}
+		&__popup {
+			min-width: 650px;
+			height: 180px;
+			p {
+				font-size: 2.6rem;
+			}
+		}
+		.show-popup {
+			top: 550px;
+		}
+	}
+	// ---------------
+	// FOOTER
+	// ---------------
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			width: 25%;
+			&:first-child {
+				width: 70%;
+			}
+			&-brand {
+				font-size: 5rem;
+			}
+			&-brand-icon {
+				width: 5rem;
+			}
+		}
+		&__box-title {
+			font-size: 2.4rem;
+			margin-bottom: 1em;
+		}
+		&__box-list {
+			list-style: none;
+		}
+		&-brand {
+			font-size: 5rem;
+		}
+		&-brand-icon {
+			width: 5rem;
+		}
+		&__box-brand-text {
+			display: none;
+		}
+
+		&__box-list-item {
+			margin-bottom: 1em;
+			a {
+				color: c.$text;
+				text-decoration: none;
+			}
+		}
+	}
+	// ---------------
+	// OTHER
+	// ---------------
+	.section-heading {
+		font-size: 5rem;
+		margin-bottom: 0.5em;
+	}
+}
